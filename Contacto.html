@@ -10,13 +10,17 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
 		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./estilos.css">
 </head>
 
 <body>
-	<div class="container sticky-top">
+	<!-- Navbar -->
+	<div class=" sticky-top navBar-custom">
 		<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="/Inicio.html">Galeria</a>
+			<div class="container-fluid ">
+				<div class="logo-transparente">
+					<img src="imagen/logo2.png" alt="Logo" width="80px" />
+				</div>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 					aria-expanded="false" aria-label="Toggle navigation">
@@ -25,31 +29,34 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link " aria-current="page" href="./Inicio.html">Inicio</a>
+							<a class="nav-link active textos-layout" aria-current="page" href="./Inicio.html">
+								Inicio
+							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link " href="./Galeria.html">Galeria</a>
+							<a class="nav-link textos-layout" href="./Galeria.html">Galeria</a>
 						</li>
-						<li class="nav-item lo-que-yo-quiera">
-							<a class="nav-link active" href="./Contacto.html">Contacto</a>
+						<li class="nav-item">
+							<a class="nav-link textos-layout" style="font-weight: 700;"
+								href="./Contacto.html">Contacto</a>
 						</li>
 					</ul>
-					<form class="d-flex" role="search">
-						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-						<button class="btn btn-outline-success" type="submit">Search</button>
+					<form class=" d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+						<button class="btn btn-outline-light" type="submit">Buscar</button>
 					</form>
 				</div>
 			</div>
 		</nav>
-
-
 	</div>
 
 
 	<div class="container">
-		<h1>Galeria de arte <i>A Trav&eacute;s de Mis Ojos</i></h1>
+		<div class="text-center titulos-layout">
+			<h1>Galería de arte <i>A Trav&eacute;s de Mis Ojos</i></h1>
+		</div>
 		<section class="row">
-			<h2 class="mb-3"><u>Cont&aacute;ctanos:</u></h2>
+			<h2 class="mb-3">Cont&aacute;ctanos:</h2>
 			<form action="#" method="post">
 				<div class="mb-3">
 					<label for="name" class="form-label">Nombre:</label>
@@ -74,54 +81,62 @@
 
 				<div class="mb-3">
 					<label for="mensaje" class="form-label">Dejanos un comentario</label>
-					<textarea class="form-control" id="mensaje" rows="3" placeholder="escriba aquí su mensaje"></textarea>
+					<textarea class="form-control" id="mensaje" rows="3"
+						placeholder="escriba aquí su mensaje"></textarea>
 				</div>
-
 				<input class="btn btn-primary" type="submit" value="Enviar">
-				
-			
 			</form>
 		</section>
 	</div>
-	<div class="container">
+
+	<!-- Footer -->
+	<div class="container-fluid layout-custom footer-custom">
 		<footer class="py-5">
 			<div class="row">
-				<div class="col-6 col-md-2 mb-3">
+				<div class="col-6 col-md-2 mb-3 textos-layout">
 					<h5>Secciones</h5>
 					<ul class="nav flex-column">
 						<li class="nav-item mb-2"><a href="./Inicio.html"
 								class="nav-link p-0 text-body-secondary">Inicio</a></li>
 						<li class="nav-item mb-2"><a href="./Galeria.html"
-								class="nav-link p-0 text-body-secondary">Galeria</a></li>
+								class="nav-link p-0 text-body-secondary">Galería</a></li>
 						<li class="nav-item mb-2"><a href="./Contacto.html"
 								class="nav-link p-0 text-body-secondary">Contacto</a></li>
 					</ul>
 				</div>
+
 				<div class="col-6 col-md-2 mb-3">
-					<h5>Información de contacto:</h5>
+					<h5 class="textos-layout">Información de contacto:</h5>
 					<ul class="nav flex-column">
-						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Dirección:
+						<li class="nav-item mb-2"><a href="https://maps.app.goo.gl/dGq9SRZ3KaFYEAgcA"
+								class="nav-link p-0 text-body-secondary">Dirección:
 								DR.Torres Boonen 829, Providencia, Santiago de Chile</a></li>
-						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Teléfono:
-								+56974925394</a></li>
+						<li class="nav-item mb-2">
+							<a href="tel:56974925394" class="nav-link p-0 text-body-secondary">
+								Teléfono: +56974925394
+							</a>
+						</li>
 					</ul>
 				</div>
 				<div class="col-md-5 offset-md-1 mb-3">
 					<form>
-						<h5>Quieres recibir las ultimas novedades?</h5>
-						<p>suscribete y enterate de todo lo nuevo.</p>
-						<div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
-								class="visually-hidden">Email address</label> <input id="newsletter1" type="email"
-								class="form-control" placeholder="direccion de correo"> <button class="btn btn-primary"
-								type="button">Suscribete</button> </div>
+						<h5 class="textos-layout">¿Quieres recibir las últimas novedades?</h5>
+						<p class="textos-layout">Suscribete y enterate de todo lo nuevo.</p>
+						<div class="d-flex flex-column flex-sm-row w-100 gap-2">
+							<label for="newsletter1" class="visually-hidden textos-layout">Email</label>
+							<input id="newsletter1" type="email" class="form-control textos-layout"
+								placeholder="direccion de correo">
+							<button class="btn btn-primary textos-layout" type="button">Suscribete</button>
+						</div>
 					</form>
 				</div>
+				</form>
+
 			</div>
 			<div class="d-flex flex-column flex-sm-row justify-content-center py-4 my-4 border-top">
 				<p>&copy; 2025 Galería A Través de Mis Ojos. Todos los derechos reservados.</p>
 			</div>
 		</footer>
-	</div>
 	</div>
 </body>
 
