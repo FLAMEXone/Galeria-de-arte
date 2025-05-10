@@ -83,7 +83,10 @@ body{
 
 }
 
-
+.cuerpo-presentacion{
+    display: flex;
+    flex-direction: column;
+}
 
 
 
