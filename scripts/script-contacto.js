@@ -87,7 +87,7 @@ function validateOnSubmit(formId, submitButtonId, submitMessageId) {
       });
 
       if (isFormValid) {
-        submitMessage.textContent = "✅ Formulario enviado correctamente";
+        submitMessage.textContent = "✅ Formulario enviado correctamente, gracias por contactarnos.";
         submitMessage.style.color = "green";
       } else {
         submitMessage.textContent =
