@@ -10,7 +10,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
 		crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="./estilos.css">
+	<link rel="stylesheet" href="./estilos/estilos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
 </head>
 
 <body>
@@ -58,37 +60,81 @@
 		<section class="d-flex flex-column">
 
 			<div class="galeria">
-				<h2>EL JARDÍN DE LAS DELICIAS, EL BOSCO</h2>
+				<h2>Galería de arte</h2>
+
+				<div class="galeria-titulo" style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+					<h2>EL JARDÍN DE LAS DELICIAS, EL BOSCO</h2>
+					<button class="info-btn btn" data-pintura="elbosco" style="margin-left: 20px; border: none; cursor: pointer; justify-content: center; align-items: center; margin-bottom: 5px;">
+						<i class="fa-solid fa-circle-info fa-lg" style="color: #560071;"></i> Más info
+					</button>
+					<button class="hide-btn btn" data-imagen="elbosco-img" style="margin-left: 10px; border: none; cursor: pointer; justify-content: center; align-items: center; margin-bottom: 5px;">
+						<i class="fa-solid fa-eye-slash fa-lg" style="color: #560071;"></i> Ocultar
+					</button>
+				</div>
+  
 				<div class="fondo-imagenes">
-					<img src="imagen/elbosco.png" alt="El jardín de las delicias, El Bosco" min-width="45%">
+					<img id="elbosco-img" src="imagen/elbosco.png" alt="El jardín de las delicias, El Bosco" min-width="45%">
 				</div>
 			</div>
 
 			<div class="galeria">
-				<h2>LA GRAN OLA DE KANAGAWA, KATSUSHIKA HOKUSAI</h2>
+				<div class="galeria-titulo" style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+					<h2>LA GRAN OLA DE KANAGAWA, KATSUSHIKA HOKUSAI</h2>
+					<button class="info-btn btn" data-pintura="granOla" style="margin-left: 20px; border: none; cursor: pointer; justify-content: center; align-items: center; margin-bottom: 5px;">
+						<i class="fa-solid fa-circle-info fa-lg" style="color: #560071;"></i> Más info
+					</button>
+					<button class="hide-btn btn" data-imagen="granola-img" style="margin-left: 10px; border: none; cursor: pointer; justify-content: center; align-items: center; margin-bottom: 5px;">
+						<i class="fa-solid fa-eye-slash fa-lg" style="color: #560071;"></i> Ocultar
+					</button>
+				</div>
+				
 				<div class="fondo-imagenes">
-					<img src="imagen/ola.png" alt="La gran ola de Kanagawa, Katsushika Hokusai" min-width="45%">
+					<img id="granola-img" src="imagen/ola.png" alt="La gran ola de Kanagawa, Katsushika Hokusai" min-width="45%">
 				</div>
 			</div>
 
 			<div class="galeria">
-				<h2>EL GUERNICA, PABLO PICASSO</h2>
+				<div class="galeria-titulo" style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+					<h2>EL GUERNICA, PABLO PICASSO</h2>
+					<button class="info-btn btn" data-pintura="guernica" style="margin-left: 20px; border: none; cursor: pointer; justify-content: center; align-items: center; margin-bottom: 5px;">
+						<i class="fa-solid fa-circle-info fa-lg" style="color: #560071;"></i> Más info
+					</button>
+					<button class="hide-btn btn" data-imagen="guernica-img" style="margin-left: 10px; border: none; cursor: pointer; justify-content: center; align-items: center; margin-bottom: 5px;">
+						<i class="fa-solid fa-eye-slash fa-lg" style="color: #560071;"></i> Ocultar
+					</button>
+				</div>
 				<div class="fondo-imagenes">
-					<img src="imagen/picasso.png" alt="El Guernica, Pablo Picasso" min-width="45%">
+					<img id="guernica-img" src="imagen/picasso.png" alt="El Guernica, Pablo Picasso" min-width="45%">
 				</div>
 			</div>
 
 			<div class="galeria">
-				<h2>LA NOCHE ESTRELLADA, VINCENT VAN GOGH</h2>
+				<div class="galeria-titulo" style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+					<h2>LA NOCHE ESTRELLADA, VINCENT VAN GOGH</h2>
+					<button class="info-btn btn" data-pintura="nocheEstrellada" style="margin-left: 20px; border: none; cursor: pointer; justify-content: center; align-items: center; margin-bottom: 5px;">
+						<i class="fa-solid fa-circle-info fa-lg" style="color: #560071;"></i> Más info
+					</button>
+					<button class="hide-btn btn" data-imagen="noche-img" style="margin-left: 10px; border: none; cursor: pointer; justify-content: center; align-items: center; margin-bottom: 5px;">
+						<i class="fa-solid fa-eye-slash fa-lg" style="color: #560071;"></i> Ocultar
+					</button>
+				</div>
 				<div class="fondo-imagenes">
-					<img src="imagen/vangogh.png" alt="La noche estrellada, Vincent Van Gogh" min-width="45%">
+					<img id="noche-img" src="imagen/vangogh.png" alt="La noche estrellada, Vincent Van Gogh" min-width="45%">
 				</div>
 			</div>
 				
 			<div class="galeria">
-				<h2>EL ENTIERRO DEL CONDE DE ORGAZ, EL GRECO</h2>
+				<div class="galeria-titulo" style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+					<h2>EL ENTIERRO DEL CONDE DE ORGAZ, EL GRECO</h2>
+					<button class="info-btn btn" data-pintura="entierroConde" style="margin-left: 20px; border: none; cursor: pointer; justify-content: center; align-items: center; margin-bottom: 5px;">
+						<i class="fa-solid fa-circle-info fa-lg" style="color: #560071;"></i> Más info
+					</button>
+					<button class="hide-btn btn" data-imagen="entierro-img" style="margin-left: 10px; border: none; cursor: pointer; justify-content: center; align-items: center; margin-bottom: 5px;">
+						<i class="fa-solid fa-eye-slash fa-lg" style="color: #560071;"></i> Ocultar
+					</button>
+				</div>
 				<div class="fondo-imagenes">
-					<img src="imagen/elgreco.png" alt="El entierro del Conde de Orgaz, El Greco" min-width="40%">
+					<img id="entierro-img" src="imagen/elgreco.png" alt="El entierro del Conde de Orgaz, El Greco" min-width="40%">
 				</div>
 			</div>
 
@@ -146,6 +192,17 @@
 	</div>
 	</footer>
 	</div>
+	
+	<!-- Modal -->
+	<div id="modalInfo" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<h2 id="modalTitulo"></h2>
+			<p id="modalDescripcion"></p>
+		</div>
+	</div>
+	
+	<script src="./scripts/script-galeria.js"></script>
 </body>
 
 </html>

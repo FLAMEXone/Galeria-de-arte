@@ -10,7 +10,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
 		crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="./estilos.css">
+	<link rel="stylesheet" href="./estilos/estilos.css"
 </head>
 
 <body>
@@ -57,31 +57,36 @@
 		</div>
 		<section class="row">
 			<h2 class="mb-3">Cont&aacute;ctanos:</h2>
-			<form action="#" method="post">
+			<form id="contact-form">
 				<div class="mb-3">
 					<label for="name" class="form-label">Nombre:</label>
 					<input type="text" class="form-control" id="name" required placeholder="escriba aqui su nombre">
+					<p id="name-message"></p>
 				</div>
 				<div class="mb-4">
 					<label for="correo" class="form-label">Email:</label>
 					<input type="email" class="form-control" id="correo" required placeholder="ejemplo@gmail.com">
+					<p id="email-message"></p>
 				</div>
-
+				
 				<div>
 					<label for="solicitud" class="form-label">Tipo De Solicitud:</label>
-					<select id="solicitud" class="form-select mb-3" aria-label="small select example">
+					<select id="solicitud" class="form-select mb-3" required aria-label="small select example">
+						<option value=""></option>
 						<option value="Compra">Compra</option>
 						<option value="Consulta">Consulta</option>
 						<option value="Venta">Venta</option>
 					</select>
+					<p id="select-message"></p>
 				</div>
-
+				
 				<div class="mb-3">
 					<label for="mensaje" class="form-label">Dejanos un comentario</label>
 					<textarea class="form-control" id="mensaje" rows="3"
-						placeholder="escriba aquí su mensaje"></textarea>
+					placeholder="escriba aquí su mensaje"></textarea>
 				</div>
-				<input class="btn btn-primary" type="submit" value="Enviar">
+				<input id="submit-button" class="btn btn-primary" type="submit" value="Enviar">
+				<p id="submit-message"></p>
 			</form>
 		</section>
 	</div>
@@ -135,6 +140,7 @@
 			</div>
 		</footer>
 	</div>
+	<script src="./scripts/script-contacto.js"></script>
 </body>
 
 </html>
