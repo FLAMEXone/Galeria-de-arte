@@ -1,3 +1,4 @@
+//objeto con un mocked de la data de las pinturas para el modal
 const dataPinturas = {
   elbosco: {
     titulo: "El Jardín de las Delicias – El Bosco",
@@ -26,6 +27,7 @@ const dataPinturas = {
   },
 };
 
+//modal
 const modal = document.getElementById("modalInfo");
 const modalTitulo = document.getElementById("modalTitulo");
 const modalDescripcion = document.getElementById("modalDescripcion");
@@ -43,10 +45,12 @@ document.querySelectorAll(".info-btn").forEach((btn) => {
   });
 });
 
+//cerrar modal
 closeBtn.addEventListener("click", () => {
   modal.style.display = "none";
 });
 
+//cerrar modal al hacer click fuera de él
 window.addEventListener("click", (e) => {
   if (e.target === modal) {
     modal.style.display = "none";
